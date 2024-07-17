@@ -48,7 +48,8 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background: rgba(255, 255, 255, 0.2);
+    background-color: black;
+    color: #0ef;
 }
 
 section {
@@ -91,4 +92,8 @@ img {
 
 .pepe {
     width: 300px;
+}
+
+h2 {
+    color: #0ef;
 }
