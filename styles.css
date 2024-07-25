@@ -97,3 +97,8 @@ img {
 h2 {
     color: #0ef;
 }
+
+
+a {
+  text-decoration: none;
+}
