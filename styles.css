@@ -1,11 +1,18 @@
+/* Estilos generales del body */
 body {
-    background: black;
-    margin: 4;
-    border: 1px solid #0ef;
-    border-radius: 20px;
+    margin: 0;
+    padding: 0;
+    width: 100vw; /* Ocupa todo el ancho de la ventana */
+    height: 100vh; /* Ocupa todo el alto de la ventana */
+    border: 1px solid #0ef; /* Borde azul */
+    border-radius: 20px; /* Borde redondeado */
+    box-sizing: border-box; /* Incluye el padding y el borde dentro del ancho total */
+    overflow-x: hidden; /* Previene el desbordamiento horizontal */
+    background: black; /* Fondo negro */
 }
 
-h1 , h2{
+/* Estilos para encabezados */
+h1, h2 {
     color: rgb(50, 205, 107);
     text-align: center;
     font-family: "Pixelify Sans", sans-serif;
@@ -14,14 +21,13 @@ h1 , h2{
     font-style: normal;
 }
 
-
+/* Estilos para la lista de habilidades */
 ul li {
     color: white;
-    padding: 10px 0px 2px 4px;
     border: 1px solid #0ef;
     list-style: none;
     padding: 2px 2px 2px 2px;
-    border-radius: 10px;
+    border-radius: 110px;
     width: 70px;
     text-align: center;
     display: flex;
@@ -29,28 +35,32 @@ ul li {
     transform: translateX(-20px);
 }
 
+/* Acomoda las habilidades en fila */
 ul {
     display: flex;
     gap: 50px;
 }
 
+/* Estilo para párrafos */
 p {
     color: white;
     text-align: center;
 }
 
+/* Centrado de la sección de habilidades */
 .pepe {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-
+/* Hover para cambiar colores de las habilidades */
 ul li:hover {
     background-color: rgb(0, 0, 0);
     color: rgb(255, 38, 0);
 }
 
+/* Estilos para los iconos de redes sociales */
 .social-media a {
     display: inline-flex;
     justify-content: center;
@@ -66,6 +76,7 @@ ul li:hover {
     margin: 30px 15px 30px 0;
 }
 
+/* Ubicación de las redes sociales */
 .social-media {
     position: absolute;
     right: 0;
@@ -73,11 +84,12 @@ ul li:hover {
     transform: translateY(-10px);
 }
 
-
+/* Color de hover en los enlaces */
 .pepe a {
     color: white;
 }
 
+/* Habilidades individuales */
 ul li:nth-child(1):hover {
     color: orange;
 }
@@ -90,17 +102,18 @@ ul li:nth-child(3):hover {
     color: rgb(255, 251, 0);
 }
 
-
+/* Tamaño de las imágenes en las habilidades */
 li img {
     width: 18px;
 }
- 
 
+/* Sin estilo de lista */
 li {
     list-style: none;
     gap: 4px;
 }
 
+/* Estilo para los enlaces del menú */
 .samzzz {
     position: relative;
     left: 0;
@@ -114,43 +127,53 @@ li {
     gap: 20px;
 }
 
-.samzzz a{
+.samzzz a {
     text-decoration: none;
     color: rgba(222, 236, 231, 0.836);
 }
 
-
+/* Hover en los enlaces del menú */
 .samzzz a:hover {
     color: #0ef;
 }
 
+/* Hover de redes sociales */
 .social-media .bxl-facebook:hover {
     color: #0ef;
 }
 
 .social-media .bxl-twitter:hover {
-    color:rgb(11, 157, 167)
-}
-.social-media .bxl-instagram-alt:hover {
-    color:rgb(255, 108, 108)
-}
-.social-media .bxl-linkedin:hover {
-    color:rgb(0, 60, 255)
+    color: rgb(11, 157, 167);
 }
 
+.social-media .bxl-instagram-alt:hover {
+    color: rgb(255, 108, 108);
+}
+
+.social-media .bxl-linkedin:hover {
+    color: rgb(0, 60, 255);
+}
+
+/* Estilo para la sección "Sobre mí" */
 .sobremixd {
     display: flex;
     width: 600px;
+    flex-direction: column;
+    align-items: center;
 }
 
+/* Imagen circular */
 .sobremixd img {
-    width: 400px;
-    height: 400px;
+    width: 100%;
+    max-width: 400px; /* Tamaño máximo */
+    height: auto; /* Mantén proporción */
     border-radius: 50%;
     border: 2px solid #0ef;
     margin: 20px;
+    display: block;
 }
 
+/* Estilos para los certificados */
 .certifiy {
     text-align: center;
     display: flex;
@@ -158,6 +181,7 @@ li {
     gap: 10px;
 }
 
+/* Imagenes de los certificados */
 .certifiy img {
     width: 200px;
     display: inline-flex;
@@ -166,7 +190,57 @@ li {
     border: 1px solid red;
 }
 
+/* Hover de las imágenes de certificados */
 .certifiy img:hover {
     scale: 1.07;
     box-shadow: 0 0 5px rgb(255, 0, 0), 0 0 25px rgb(255, 0, 0), 0 0 50px rgb(255, 0, 0), 0 0 100px rgb(255, 0, 0);
+}
+
+/* Media queries para pantallas pequeñas */
+@media (max-width: 600px) {
+    ul li {
+        transform: translateX(-12px);
+    }
+
+
+
+    body {
+        width: 598px;
+        height: auto;
+        padding: 0;
+        border-radius: 0;
+        box-sizing: border-box;
+        font-size: 18px;
+        
+    }
+
+    /* Ajustes para la imagen en pantallas pequeñas */
+    .sobremixd img {
+        width: 100%;
+        max-width: 300px;
+        display: flex;
+        transform: translatex(130px);
+    }
+
+    ul {
+        flex-wrap: wrap; /* Permite que las habilidades se acomoden en varias líneas */
+        justify-content: center;
+    }
+
+    /* Reduce el tamaño de los iconos de redes sociales */
+    .social-media {
+        transform: translateX(220px);
+    }
+
+    .social-media a {
+        width: 35px;
+        height: 35px;
+        margin: 20px 10px 20px 0;
+    }
+    .certifiy img {
+        width: 150px;
+    }
+    .samzzz a {
+        font-size: 17px;
+    }
 }
