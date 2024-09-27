@@ -2,8 +2,6 @@
 body {
     margin: 0;
     padding: 0;
-    width: 100vw; /* Ocupa todo el ancho de la ventana */
-    height: 100vh; /* Ocupa todo el alto de la ventana */
     border: 1px solid #0ef; /* Borde azul */
     border-radius: 20px; /* Borde redondeado */
     box-sizing: border-box; /* Incluye el padding y el borde dentro del ancho total */
