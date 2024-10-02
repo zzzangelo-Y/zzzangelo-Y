@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+    padding: 0;
+    border: 1px solid #0ef; 
+    border-radius: 20px; 
+    box-sizing: border-box;
+    overflow-x: hidden;
+    background: black; 
+}
+
+
+
+/* Estilo para los enlaces del menú */
+.samzzz {
+    position: relative;
+    left: 0;
+    top: 0;
+    margin: 20px;
+    height: 30px;
+    width: 320px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.samzzz a {
+    text-decoration: none;
+    color: rgba(222, 236, 231, 0.836);
+}
+
+.samzzz a:nth-child(2){
+    text-decoration: none;
+    color: #0ef;
+}
+
+/* Hover en los enlaces del menú */
+.samzzz a:hover {
+    color: #0ef;
+}
