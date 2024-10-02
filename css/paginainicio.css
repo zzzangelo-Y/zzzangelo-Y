@@ -213,7 +213,7 @@ li {
 
 
     body {
-        width: 598px;
+        width: 380px;
         height: auto;
         padding: 0;
         border-radius: 0;
@@ -223,8 +223,16 @@ li {
     }
 
     .sobremixd {
-        width: 600px;
+        width: 350px;
     }
+
+    .divimg {
+        width: 600px;
+        height: 400px;
+        display: flex;
+    }
+
+
     /* Ajustes para la imagen en pantallas pequeñas */
     .sobremixd img {
         width: 100%;
@@ -248,8 +256,13 @@ li {
         height: 35px;
         margin: 20px 10px 20px 0;
     }
+
+    .certifiy {
+        display: flex;
+        flex-direction: column;
+    }
     .certifiy img {
-        width: 150px;
+        width: 340px;
     }
     .samzzz a {
         font-size: 17px;
