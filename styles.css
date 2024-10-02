@@ -2,11 +2,11 @@
 body {
     margin: 0;
     padding: 0;
-    border: 1px solid #0ef; /* Borde azul */
-    border-radius: 20px; /* Borde redondeado */
-    box-sizing: border-box; /* Incluye el padding y el borde dentro del ancho total */
-    overflow-x: hidden; /* Previene el desbordamiento horizontal */
-    background: black; /* Fondo negro */
+    border: 1px solid #0ef; 
+    border-radius: 20px; 
+    box-sizing: border-box;
+    overflow-x: hidden;
+    background: black; 
 }
 
 /* Estilos para encabezados */
@@ -163,8 +163,8 @@ li {
 /* Imagen circular */
 .sobremixd img {
     width: 100%;
-    max-width: 400px; /* Tamaño máximo */
-    height: auto; /* Mantén proporción */
+    max-width: 400px;
+    height: auto; 
     border-radius: 50%;
     border: 2px solid #0ef;
     margin: 20px;
@@ -221,7 +221,7 @@ li {
     }
 
     ul {
-        flex-wrap: wrap; /* Permite que las habilidades se acomoden en varias líneas */
+        flex-wrap: wrap;
         justify-content: center;
     }
 
