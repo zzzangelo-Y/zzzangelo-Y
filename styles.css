@@ -152,6 +152,10 @@ li {
     color: rgb(0, 60, 255);
 }
 
+.social-media .bxl-github:hover {
+    color: rgb(0, 0, 255);
+} 
+
 /* Estilo para la sección "Sobre mí" */
 .sobremixd {
     display: flex;
