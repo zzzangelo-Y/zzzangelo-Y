@@ -155,7 +155,7 @@ li {
 /* Estilo para la sección "Sobre mí" */
 .sobremixd {
     display: flex;
-    width: 600px;
+    width: 500px;
     flex-direction: column;
     align-items: center;
 }
