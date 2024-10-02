@@ -212,6 +212,9 @@ li {
         
     }
 
+    .sobremixd {
+        width: 600px;
+    }
     /* Ajustes para la imagen en pantallas pequeñas */
     .sobremixd img {
         width: 100%;
